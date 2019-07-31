@@ -1,0 +1,163 @@
+Key Words:
+        Key Word are referred word by python to define syntax of a program
+        As per python 3.6.4 version we have 33 keywords
+        In 33 keywords "False,None,True" will begin with capital letters and rest of 30 keywords are in small letters
+
+
+
+To view list of keywords:
+                -->import keyword
+                -->print (keyword.kwlist)
+           (or)
+                                    ..^ keyword
+                                    |
+                --> import keyword as k----->alias name
+                --> print(k.kwlist)
+
+
+Module:
+        Module means a python file
+
+
+steps to create a module:
+    ->Open IDLE from start menu
+    ->In IDLE menu select "File" and "New File"
+    ->Write the program
+    ->Save the file using any name but the exit must be ".py" only
+    ->To Run the module use "F5"
+
+
+
+Steps to run module using command prompt:
+    ->Open command prompt
+    ->In command prompt move to module (python "File") Location
+    ->Type the command as python File Name.py
+
+
+
+Ex: #Write a script to print the name for 10 times
+    print("satya \n" * 10)
+
+    print - (Function)
+    satya - ("string")
+    \n - (New Line)
+    * - (operator)
+    10 - (value)
+
+
+
+Data Types:
+     10 - int
+     10.25 -Float
+     True/False - Boolean
+    { ''
+     " "} are used for one line sting
+
+     {'''  '''
+       """  """} are used for multiline string
+
+
+     [10,20,30] --->List
+     {
+       (10,20,30)
+          (or)
+       10,20,30 } ---> tuple
+
+
+      {10,20,30} --> set
+
+
+
+      {10:A, 20:b} ----> dict (dictionary)
+
+
+
+
+
+
+ variable:
+    Named Variable location is which stores some data temporarily
+
+
+ Syntax:
+        variable name = value
+        -> In python variable are dynamic type.It means the type of variable is decided at RunTime
+
+
+ ex: id no = 101
+    print(id no) #101            id no->101->int class object
+
+ ex: salary = 19500.00
+    print(salary) #19500.000        salary -> 19500.00 -> float class object
+
+
+ Note: To view type of variable we use "type()" built in function
+ type():
+
+
+ ex:
+    a = 100
+    print(100) #100
+    print(type(a)) # <class 'int'>      a -> 100 -> int -> class object
+
+
+    b = 10.25
+    print(b) #10.25
+    print(type(b) # <class'float'>      b -> 10.25 -> float -> class object
+
+
+    c = True
+    print(c) #True
+    print(type(c)) #<class'bool'>       c -> True -> True -> boolean class object
+
+
+
+
+  #Example Script on one line and multi line string
+
+        name = Ravi
+        address = "R.Ravi,
+                    s/o R R R,
+                    satya Tech,
+                    Hyderabad"
+
+       print(name)
+       print(address)
+
+
+
+ Assignment Operator:
+                    The Assignment operator will execute from 'Right' to 'Left'
+
+                   L = R
+                   L = will be  variable only
+                   R = Value -> a = 100
+                   variable -> b = a
+                   expression -> c = a+b
+                   function-calling -> x = len("satya")
+                   object -> y = employee()
+
+
+* In python we can declare multiple variables in one line
+
+
+ex: a,b,c = 10,20,30
+    print(a,b,c) #10 20 30
+
+    a,b,c,d = 10, satya , 10.25, True
+    print(a,b,c,d) #10 satya 10.25 True
+    print(a) #10
+    print(b) #satya
+    print(c) #10.25
+    print(d) #True
+
+
+* In python if multiple variables are holding common value will refer to same object
+
+ex:
+ a = 10                 a&c -> 100 -> int class object
+ b = 200                  b -> 200 -> int class object
+
+
+
+Functions file refer after this

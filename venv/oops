@@ -1,0 +1,103 @@
+OOPS :
+oops stands for "object oriented programming system"
+-> oops is a mechanisam to write  programs using class objects
+->As per "OOAD"(object oriented analysis & design) we have 4 principles under OOPS
+They are:
+    1.Abstraction
+    2.Encapsulation
+    3.Inheritence
+    4.polymorphism
+->Any programming language which supports the principles of oops is called oopl(object oriented programming language)
+->python is object orient programming language
+
+
+Abstraction:
+            Abstraction is process of gathering required data and hiding un neccessary data
+
+What is data?
+    Data is a collection of row facts.which doesnot have any meaning in the real world.
+
+
+ What is information?
+    Meaningful data (or) Processed data is called as information
+
+  ex: student 23 is present with 98.34% ->Meaning
+
+
+  Encapsulation:
+            Encapsulation is a process of binding state and behaviour in to container.
+          -> State represents variables
+          -> Behaviour represent methods
+          -> Container represent class
+          Encapsulation is a process of binding related variables and methods in to a class
+
+
+ Inheritance:
+            Inheritance is a process of getting properties (variables and methods) from one class to another class
+            The class which is providing properties is called as "Super Class"
+            The class which is accepting properties from super class is called as "Sub Class"
+
+
+ Polymorphism:
+             "poly"- means "Many"
+             "Morph"-means "Behaviour"
+             Polymorphism means many behaviours under "One Name"
+
+ class:
+       class is a collection of related variables and methods
+       To declare a class we use "class" keyword
+       syntax:
+                class class_name:
+                        variables
+                          or
+                        methods
+
+
+ Variables:
+           Variable is named memory location.Which stores some data temporarily
+           In python we have 5 types of variables:
+           1.Global variable
+           2.static variable
+           3.Argument variable
+           4.Instance variable
+           5.Local Variable
+
+
+Static Variables:
+            The variable which are declared inside the class and out side method are called as static variables
+            To call static variables we use class name
+            Static variables we get memory at class loading time
+            Static  variables will holds common value for all objects
+            Static variable will get memory for one time
+
+
+
+
+#ex:
+class employee:
+    comp-name : "kvana"
+    comp-cno  : 9876543210
+    print(employee.comp-name)
+    print(employee.comp-cno)
+output:
+kvana
+9876543210
+
+comp-name,comp-cno are static variables and aslo static memory
+
+
+
+Instance variables:
+        The variable which are declared inside the methods (or) constructor using "self" word are called as instance variable
+        To call instance variable we use object (or) object reference variable
+        Instance variable will get memory after object creation
+        Instance variable will get memory for every object
+
+
+Note: "Self" represents current class object
+
+
+what is object ?
+Object is an instance of a class
+
+Instance means allocating sufficient memory for instance variable of a class
