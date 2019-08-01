@@ -52,3 +52,46 @@ print("Sum =", int(input("1stno:")) + int(input("2ndno: ")))
 
 #
 print("sum =", float(input("n01: "))+float(input("no2: ")))
+
+
+
+
+#example on evaluate function
+
+x = eval(input("Enter a value:"))
+print(x)
+print(type(x))
+
+#out put
+# enter a value = 11.4 ,11
+# 11.4,11
+#<class 'float> <class 'int'>
+# enter value = "sandhya"
+#sandhya
+#<class 'str'>
+#enter a value = [10,20,30]
+#[10,20,30]
+#<class 'list'>
+#enter a value = {10,20,30}
+#{10,20,30}
+#<class 'set'>
+#enter a value = True
+#True
+#<class 'bool'>
+#enter a value = (10,20,30)
+#(10,20,30)
+#<class 'tuple'>
+# enter a value = {1:'A', 2:'B'}
+#{1:'A', 2:'B'}
+#<class 'dict'>
+
+
+
+# After this refer to file
+
+
+
+
+
+
+

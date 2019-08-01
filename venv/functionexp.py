@@ -51,7 +51,7 @@ def add():
     print(a+b)
 add()
 
-
+print("-------")
 
 #Example on function with arguments and without return:
 def add(no1=0, no2=0):
@@ -108,3 +108,6 @@ print("length =",len(s1))
 
 
 #After this recursive function
+
+
+
