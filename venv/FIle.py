@@ -44,3 +44,7 @@ file.close()
 print("idno",n)
 print("name",m)
 print("sal",l)
+
+
+
+#After this refer to operators

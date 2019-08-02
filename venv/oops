@@ -103,7 +103,19 @@ Object is an instance of a class
 Instance means allocating sufficient memory for instance variable of a class
 
 
+What is the difference between static and instance variable?
+
+            Static                                      Instance
+1.Static Variable are declared inside the           1.Instance Variable are declared inside the methods (or)
+class and outside the method                           constructor using "Self" word
+2.Static Variable we use to call by                 2.Instance Variable we used to call object or object refer variable
+clas name
+3.Static Variable will get memory                   3.Instance variable will get memory after object creation
+at class loading time
+4.Static Variable will holds common value            4.Instance variable will hold unique for each object
+for all objects
+5.Static Varibale will get memory for
+one time
 
 
-
-After these refer to  create object
+                        After these refer to  create object file

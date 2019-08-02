@@ -1,0 +1,38 @@
+Operators:
+    Operator will perform operation on operands(2)
+    Python is providing 8 types of operations
+    1.Arthematic operator
+    2.Relation operator
+    3.Logical operator
+    4.Assignment operator
+    5.Short hand assignment operator
+    6.Bitwise operator
+    7.Membership operator
+    8.Identity operator
+
+Arthematic operators:
+        + -> 10+3 = 13
+        - -> 10-3 = 7
+        * -> 10*3 = 30
+        / -> 10/3 = 3.333
+        % -> 10%3 = 1
+       // -> 10//3= 3
+       ** -> 10**3 =100
+
+
+
+In python the Arthematic operators with follow  "BODMAS" Rule
+B -> ()
+O -> **
+
+B & O are of same priority
+
+D -> / % //
+m -> *
+
+D & M are of same priority
+
+A -> +
+S -> -
+
+A & S are of same priority
