@@ -43,8 +43,6 @@ e1.display()
 
 
 
-
-
 class employe:
     comp_name = "kvana"
     def assign(self,id,name):
@@ -67,3 +65,16 @@ e2.assign(102,"chow")
 e2.display()
 print(e1.comp_name)
 
+
+
+#Example on static method
+
+
+class employee:
+    comp_name = "kvana"
+    comp_cno  = 987654310
+    @staticmethod
+    def display():
+        print(employee.comp_name)
+        print(employee.comp_cno)
+employee.display()

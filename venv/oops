@@ -118,4 +118,27 @@ for all objects
 one time
 
 
+
+
+Methods:
+        Method is a collection of statements which perform an operation
+        To define a method we use "def" keywords
+        The methods which is defined once can call for multiple times
+        The methods are defined inside the class in python we have "3" types of methods:
+        1.Static Method
+        2.Instance Method
+        3.Class Method
+        The above "3" methods are defined in "4" ways.
+        1.Method without argument and without return
+        2.Method with argument and without return
+        3.Method without arguments and with return
+        4.Method with argument and with return
+
+Static Method:
+        Static Method are ment to perform operations on static variable
+        To declare  a static method we use "@" decorator i.e "@staticmethod"
+        To call  static method we use class-name
+
+
+
                         After these refer to  create object file

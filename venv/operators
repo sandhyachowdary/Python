@@ -36,3 +36,141 @@ A -> +
 S -> -
 
 A & S are of same priority
+
+Membership Operators:
+Operator                    Description
+in                          Evaluates to true if it finds a value in the specified sequence or false otherwise
+notin                       Evaluates to true if it does not find a value in the specified sequence or false otherwise
+
+
+#ex:
+s1 = "This is sandhya from kvana"
+print("sandhya" in s1) #True
+print("k" in s1) #True
+print("Sandhya" in s1) #False because the word start with capital "S"
+print("z") #False
+
+
+nos =[10,24,6,58,71,120,2670,2845]
+print(120 in nos) #True
+print(9 in nos) #False
+
+
+Identity Operators:
+Operator                Memory
+is                      True if the operands are identical(refer to the same object)
+isnot                   True if the operands are not identical(do not refer to the same object)
+
+#ex:
+a = 100
+b = 200
+c = 100
+print(a is b) # False
+print(a is c) # True
+print(b is not c) # True
+
+
+Relational Operators:
+        Relation operator will return True or False
+Operator            Meaning
+>                   Greater than - True if left operand is greater than the right
+<                   Less than    - True if left operand is less than the right
+==                  equal to     - True if both operands are equal
+!=                  notequalto   - True if operands are not equal
+>=                  Greater than or equal to - True if Left operand is Greater than or equal to the right
+<=                  Less than or Equal to - True if left operand is less than or equal to the right
+
+
+>       ->      10>20  #False
+<       ->      25<48  #True
+==      ->      25==25 #True
+!=      ->      25!=25 #False
+>=      ->      5>=5   #True
+<=      ->      8<=7   #False
+
+
+ASCII:
+        Stands for American Standard Code for information Interchange
+        In ACII we have "256" characters which begins from '0' and end upto "255"
+        65 - A       97 - a
+        66 - B       98 - b
+        67 - C       99 - c
+        :            :
+        :            :
+        90 - Z       122 - z
+
+
+    "A" > "A"
+    65  > 65 #False
+    "A" > "a"
+    65 > 97 #False
+
+ print(65) #65
+ print(chr(65)) #A
+ print(chr(97)) #a
+
+
+ "sandhya" > "sandhya" -> False
+ "sandhya" >  "Chow"   -> True
+ "sandhya" >  "sandhya" -> True
+
+Logical Operators:
+
+Operator                Meaning
+and                     True if both the operands are True
+or                      True if either of the operands is True
+not                     True if operands is false(Complements the operand)
+
+
+Logical "and":
+            The "Logical and" will execute from "Left" to "Right". If Left side expression is true controller will check
+            right side else no
+
+
+            L  and   R
+            True -> correct
+            Flase  -> Wrong  Ans: False
+
+            -> In Logicaland both Left and Right side expression must be True
+          #ex:
+            10 > 20  and 40 > 50  -> False
+            20 > 10  and 40 > 50  -> False
+            40 == 40 and 50 > 10  -> True
+          #ex:
+            10 and 20 # ->20
+            20 and 5    ->5
+            0 and 10    ->0
+            10 and 0    ->0
+            "A" and "B" ->"B"
+            "B" and "sandhya" -> "Sandhya"
+
+            "A" and " "  -> ''
+         (empty string(it means false))  " " and "B"  -> ""
+Logical "or":
+           Logicalor will execute from Left to Right.If the left side expression is "True" controller never check Right side
+           and Results "True" else "no"
+
+          L or R
+          True -> wrong
+          False -> correct
+          #ex:
+            10>20 or 40>50 -> True
+            20>10 or 40>50 -> True
+            40==40 or 50>10 ->True
+            40!=40 or 40==40 -> True
+
+          #ex:
+            10 or 20 ->10
+            0 or 20  -> 20
+            20 or 0   ->20
+            0 or 0    ->0
+           "s" or "A" ->"s"
+           ""  or "sandhya" -> "sandhya"
+
+Logical not:
+            Logical not will inverse the result
+            Logical not will have right side operand only
+
+
+           notTrue   #False
+           notFalse  #True
