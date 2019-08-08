@@ -140,5 +140,83 @@ Static Method:
         To call  static method we use class-name
 
 
+Instance Method:
+        Instance Method will perform operations on stance variable
+        By default instance method will take 'self' as a default parameter
+        'self' represents current class object
+        To call instance method we use object/ object refrence variable
+ex:
+        class student:
+                def assign(self,rno,marks):
+                       self.rno = rno
+                       self.marks = marks
+                def display(self):
+                      print(self.rno)
+                      print(self.marks)
+        x = student()
+        x.assign(101,350)
+        x.display()
+           (or)
+        y = student
+        y.assign(102,360)
+        y.dispaly()
+
+
+
+Constructor:
+            It is aspecial operator kind of method,which is used to intialize the instance variable of a class
+            Constructor name must be "__init__()"
+            Constructor will take self as a default argument
+            Constructor is called at the line of object creation
+
+
+
+
+
+ex:
+        class employee:
+              def __init__(self):
+                    print("I am a constructor")
+              def display(self):
+                    print("I am on display")
+        e = employee()
+        e.display()
+        output:
+         I am on constructor
+         I am display
+
+ Note: If a method is defined with "__du__" Double under scores for both sides are called as "Dunder" method or "magic" method
+
+
+ ex:
+        __init__()
+        __del__()
+        __iter__()
+        __next__()
+        etc
+
+
+Example on Default constructor (A constructor without argument) :
+The default constructor will intialize common values for every object
+ex:
+
+    class employee:
+        def __init__(self):
+            self.idno = 101
+            self.name = "Sandhya"
+
+        def display(self):
+            print("idno :",self.idno)
+            print("name :",self.name)
+
+    e1 = employee()
+    e1.display
+
+
+ employee is class
+ __init__ is default constructor
+ self.idno and self.name are instance variable
+ display is instance method
+ e1 is global variable
 
                         After these refer to  create object file
