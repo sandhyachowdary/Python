@@ -78,3 +78,18 @@ class employee:
         print(employee.comp_name)
         print(employee.comp_cno)
 employee.display()
+
+
+#Example program on parameterized constructor
+
+class employee:
+    def __init__(self,idno,name):
+        self.idno = idno
+        self.name = name
+    def display(self):
+            print("ID no:",self.idno)
+            print("Name : ",self.name)
+e1 = employee(101,"Sandhya")
+e1.display()
+e2 = employee(102,"sandhya")
+e2.display()

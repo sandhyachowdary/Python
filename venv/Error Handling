@@ -1,0 +1,67 @@
+Error:
+    Also called as syntax error (or) parsing error
+    Developer will be responsible for error became not followed syntax
+    Developer will be provide the solution
+    Getting error program won't run
+
+
+
+Exeception:
+       Exception in runtime error
+       user is responsible because not providing proper input occur
+       Developer will handle the exception because to avoid program terminated abnormally
+
+
+Bug:
+        Bug is a logical error
+        Developer is responsible for the bug because not providing proper logic
+        Expected output not matching with Actual
+        Developer needs to provide solution
+
+
+
+Execption Handling:
+            Exeception is runtime error which occurs at runtime because of invalid input given by user
+            If any exception occurs the program will terminate abnoramally
+            To avoid abnormal termination we are handling the exception
+
+ In the error handling file  we got the execption is occured the program got terminated  abnormally
+ To avoid abnormal termination we need to handle the execption using "try" and "except"
+
+ Try:
+    Try is a block of statements which may have exception statements
+    If any exception occurs in "try" block,the try block will generate object to occured exception class and handover
+    matching except block
+
+
+ what is exception?
+ Execption is a run time error
+
+
+ What are the exception in python?
+ In python execptions are classes
+
+
+
+ Except:
+ Except is a block of statements which handle the occured exception
+
+
+ Syntax:
+ try:
+ ..........
+ .............
+ except exception-classname as aliasname(optional)
+
+
+ Note:
+ Normal Except Block                        Default Except block
+Except exception class name:                except:
+
+
+
+
+
+
+
+            ...... Error handling program FILE......

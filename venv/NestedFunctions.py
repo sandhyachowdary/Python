@@ -87,3 +87,6 @@ def count(fun,no):
     print(res)
 count(inc,100)
 count(dec,20)
+
+
+#---------After this Error Handling File ---------
