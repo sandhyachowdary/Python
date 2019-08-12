@@ -60,7 +60,99 @@ Except exception class name:                except:
 
 
 
+In python one try block multiple except blocks
 
+syntax:
+
+    try:
+       ......
+       ......
+    except exception class name as alias name
+        .....
+        .....
+    except exception class name as alias name
+        .....
+        ....
+    except exception class name as alias name
+            .....
+            .....
+Try with Else:
+         A try block can have optional else block
+         The statements under the else block will execute if there are no exception in try block
+
+syntax:
+    try:
+        ---------
+    except exception class name as alias name:
+        ---------
+    else:
+       -----------
+
+
+
+Try with Finally:
+            The statements under the "finally" block will execute in any situation.
+            It means if exception occured (or) not
+
+Syntax:
+    try:
+     ......
+     ......
+     except exception class name as alias name:
+          ......
+          ......
+     finally:
+           .......
+           .......
+
+Note:
+    It can have multiple except blocks (or) else block also
+
+
+What is the difference between Default and Named Except block
+
+
+Named Except Block:
+        The named except block will handle only one exception which is name in except
+
+
+
+# example on named except block
+
+try:
+    a = int(input("1stno: "))
+    b= int(input("2ndno: "))
+    print("sum = ",a+b)
+    print("sub = ", a-b)
+    print("mul = ", a/b)
+    print("Div = ", a*b)
+except ZeroDivisionError as Z:
+    print(Z)
+print("Thanks")
+
+
+
+
+Default Except Block:
+        Default except block can handle any exception
+
+
+Note: If you are defining multiple except blocks the default except block must be in the last.
+      Else you will get the syntax error
+
+
+Example on default execption block
+
+try:
+    a = int(input("1stno: "))
+    b= int(input("2ndno: "))
+    print("sum = ",a+b)
+    print("sub = ", a-b)
+    print("mul = ", a/b)
+    print("Div = ", a*b)
+except:
+    print("Invalid input")
+print("Thanks")
 
 
 

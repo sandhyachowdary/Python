@@ -1,0 +1,29 @@
+Predefined Exception Classe Hierachies:
+
+
+
+
+                       Base Exception
+                          Exception
+   Arthimatic   OSError   RunTime  Look Up  Syntax error
+   Error            ^                Error               ^
+   ^                .                  ^                 .
+   .                .                   .                .
+   Zero Division    .                   .
+   Error            .                   .                .
+
+            File NoT  Permission        .               Indentation Error
+            Found       Error           .
+                                        .
+                                        .
+                             Index Error   Key Error
+
+
+
+
+
+ The default super class of any exception calss is "Base_Exception" class
+
+
+ Note:
+        To create userdefined exception class you need inherit BaseException (or) Exception Error
