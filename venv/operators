@@ -345,3 +345,50 @@ syntax:
  output:
  if it is True: 1,2,3,4,5
  if it is Flase: 4,5
+
+
+if else:
+    if else is a conditional control statement which work for "True and False " states
+
+    syntax:
+            if conditon:
+                    -----1
+                    ------2
+            else:
+                    -----3
+                    ------4
+     --------5
+     --------6
+
+output:
+        if condition is True: 1,2,5,6
+        if condition is False: 3,4,5,6
+
+
+
+if elif else:
+            one ifelse can have multiple elif's
+        syntax:
+               if condition:
+                    ------1
+                    -------2
+               elif condition:
+                      -----3
+                      -----4
+               else:
+                    -----7
+                    -----8
+               -----9
+               -----10
+           output:
+                if is True:1,29,10
+                if is false: check elif
+                elif is true: 3,4,9,10
+                else is false: check elif
+                elif is true: 5,6,9,10
+                elif is false: 7,8,9,10
+
+
+
+
+--------------After these conditional operators -------------
