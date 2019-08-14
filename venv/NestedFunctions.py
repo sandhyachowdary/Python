@@ -66,7 +66,7 @@ outer(input("Enter name :"))
 #ex:
 def outer(name):
     def inner():
-        nonlocal  name
+        nonlocal name
         name = "Mr/Mrs :" + name
         print(name)
     return inner
