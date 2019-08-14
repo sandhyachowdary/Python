@@ -151,3 +151,4 @@ finally:
     conn.close()
     print("DB connection closed")
 print("Thanks")
+ # ----After these raiseandassert ----------

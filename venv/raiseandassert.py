@@ -29,3 +29,6 @@ try:
 except AssertionError as ae:
     print(ae)
 print("thanks")
+
+
+#-------After predefined exception-----------
