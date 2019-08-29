@@ -1,0 +1,85 @@
+Right Side database
+          -> Data Source
+          -> sqlite
+          -> Download -> click
+
+
+Database: Python Programming examples to communicate
+
+#example program to make a connection to database
+import sqlite3 as sql
+con = sql.connect("icici.db")
+print("connection is generated")
+conn.close()
+print("connection is closed")
+
+
+
+Connect:
+        The connect function will search for given database file.
+        If file is available get the connection and retrun it.
+        If file is not available create a new file (DB file) and return the connection
+
+
+Savings Account
+
+Number        Test          Number                Real                  Test
+ACno          Name          Contactno             Balance               Status
+Primary key                 unique
+1001          abc           9876543210            100000                 Active
+1002          def           6543291011            160000                 Active
+1003          ghi           9876543201            178880                 Suspended
+1004          jkl           7654321000            876541                 Blocked
+
+Data types:
+
+Insqlite                Python
+Number                  int
+Real                    float
+text                    str(string)
+
+
+
+Table Name : Doctors
+
+id       name       degree
+101      ravi       md
+102      kumar      mbbs
+103      mohan      md
+
+Table : visits
+
+id      patientname      vdate
+101     aaa              2019-08-29
+102     bbb              2019-08-29
+103     ccc              2019-08-29
+101     ddd              2019-08-29
+101     eee              2019-08-29
+102     ggg              2019-08-29
+102     hhh              2019-08-29
+
+inner join with on class
+d-degree = input("enter doctor's degree:")
+
+#read doc.id,doc.name,doc.degree,fact.name
+
+curs.execute("select doctors.id,doctor.name,doctors.degree,visits.patientname from doctors inner join visits on doctors.id = visits.id
+                where doctors.degree = ?",(d_degree))
+
+#Reading doc-name,pt-name,visit-date
+curs.execute("select doctors.name,visits.patientname,visits.vdate from doctors inner visits on doctors.id = visit.if where doctors.degree =? ",
+                (d_degree))
+
+res = curs.fetchall()
+for x in res:
+    print(x)
+
+sqlite inner join with alias:
+ #Reading doc.name,pat.name,visit.date of 1 doctor we are using alias table name instead of complete table name
+
+ curs.execute("select doc.name,vis.patientname,vis.date from doctors as doc inner join visits as vis on
+                doc.id = vis.id where doc.name =?",(d_name))
+ res = curs.fetchall()
+ for x in res:
+      print(x)
+ conn.close()
